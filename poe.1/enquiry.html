@@ -29,4 +29,36 @@
                 <label for="name">Full Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
 
-                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label>Select Services (You can select multiple):</label><br>
+                <input type="checkbox" name="service" value="PC Gaming - R100"> PC Gaming - R100/hr<br>
+                <input type="checkbox" name="service" value="Console Gaming - R80"> Console Gaming - R80/hr<br>
+                <input type="checkbox" name="service" value="Esports Tournament - R150"> Esports Tournament - R150<br>
+                <input type="checkbox" name="service" value="VIP Room - R300"> VIP Room - R300/hr<br><br>
+
+                <label for="message">Additional Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+                <button type="submit">Submit Enquiry</button>
+                <button type="button">Calculate Fees</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Fee Calculation Logic</h2>
+            <p>This form will calculate: Total = (Subtotal - Discount) * 1.15 for VAT</p>
+            <p>Example: PC Gaming R100 + Console R80 = R180 Subtotal. With 10% discount = R162. With 15% VAT = R186.30 Total Quote.</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2026 Next Level Gaming & Esports Arena</p>
+    </footer>
+</body>
+</html>
